@@ -504,7 +504,7 @@ function revealMemory(el){
       and i'm really glad… it's still you 🤍
       `;
 
-    const paragraphs = text.split("\n\n");
+    const paragraphs = text.trim().split(/\n\s*\n/);
 
     const letter = document.getElementById("letter");
     const sign = document.getElementById("sign");

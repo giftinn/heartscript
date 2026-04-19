@@ -237,8 +237,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
+<h1>Hallow Mamas</h1>
+<p>This is for you. <br>But you have to unlock it.</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -270,7 +270,7 @@ pointer-events:none;
 <div id="options"></div>
 
 <div class="score-box">
-Points: <span id="score">0</span> / 3
+Points: <span id="score">0</span> / 4
 </div>
 
 <p id="feedback"></p>
@@ -279,7 +279,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Another Month of Us</h1>
+<h1>Remember Our Love</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -333,7 +333,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '0505';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -381,9 +381,10 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"Kapan pertama kali kita ketemu?", options:["April","Mei","Juni"],correct:1},
+{q:"Di bulan apa kita balikkan?", options:["Januari","Februari","Maret"],correct:2},
+{q:"Dimana kita pertama ketemu? ", options:["Di jalan","di base mangkal","di swl"],correct:2},
+{q:" Apa nama panggilan aku ke kamu?", options:["Rowy","Owen","Rorow"],correct:0}
 ];
 
 let currentQ = 0;
@@ -448,7 +449,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2025-05-05T00:00:00");
 
     setInterval(()=>{
 
@@ -482,11 +483,25 @@ function revealMemory(el){
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
+       hey my word 🤍
 
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
+      i've been thinking about us a lot lately, about how everything started, and how somehow we still found our way back to each other. it still feels kinda unreal in the sweetest way possible. 
       
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
+      i still remember the first time i met you at swl, on may 3rd, 2025. it was just supposed to be something simple, right? but then before the trial even ended, you asked me to be yours. and honestly, from that moment, something about you already felt different.
+      
+      we had our three months together, messy, cute, chaotic, full of feelings. but we weren't perfect. our communication was really bad back then, and it broke us. we let each other go, even though i think deep down we both didn't really want to.
+      
+      after that, life went on. i met new people, talked to different souls, even tried to build something new with someone else. i tried to move forward, to figure things out without you. but somehow,  you were always there, just there, quietly staying. and i know it wasn't easy for you either. it took you time, courage, and so much convincing within yourself, but still, you chose me again.
+      
+      march 24… the day you asked me to come back. and here we are now.
+      
+      and i just want you to know, this time, i don't wanna repeat the same mistakes. i wanna grow with you, not against you. i wanna learn how to communicate better, how to understand you more, how to love you in a way that feels safe and real.
+      
+      i hope for us to be softer with each other.
+      i hope we choose each other, not only when it's easy, but especially when it's hard. i hope we can build something stronger, something more mature, something that lasts.
+      
+      and most of all, i hope we never forget why we came back to each other in the first place. you're still my favorite person, in every timeline we've been through.
+      and i'm really glad… it's still you 🤍
       `;
 
     const paragraphs = text.split("\n\n");
